@@ -550,3 +550,367 @@ footer .copyright {
     display: none;
 }
 
+/* MEDIA QUERY FOR TABLET */
+@media(max-width:1500px) {
+    .btn {
+        padding: 12px 32px;
+
+    }
+
+    .wrapper {
+        padding: 0px 100px;
+    }
+
+    nav {
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 36px 100px;
+    }
+
+    header,
+    header .wrapper,
+    .hero-section {
+        height: 1150px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .hero-section .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-section .left .btn {
+        align-self: flex-start;
+    }
+
+    .hero-section .right {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .hero-section .right img {
+        height: 600px;
+    }
+
+    .hero-section .achievement-card {
+        position: relative;
+        margin-bottom: 80px;
+
+    }
+
+    .hero-section .achievement-cards {
+        align-self: flex-start;
+        margin: 40px;
+    }
+
+    .achievement-card.students-enrolled,
+    .achievement-card.overall-rating {
+        position: relative;
+        left: unset;
+        top: unset;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    .testimonial-section h2 {
+        margin-bottom: 20px;
+    }
+
+    .testimonial-section {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 55px;
+
+    }
+
+    .testimonial-section .testimonial-card:last-child {
+        transform: translateX(0px);
+        margin-bottom: 0px;
+    }
+
+    .testimonial-section .testimonial-card:last-child::before {
+
+        top: -40px;
+    }
+
+    .testimonial-section .testimonial-card {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .testimonial-section .desktop {
+        display: none;
+    }
+
+    .testimonial-section .mobile-btn {
+        display: block;
+        align-self: flex-end;
+        order: 3;
+    }
+
+    .testimonial-section .right {
+        order: 1;
+    }
+
+    .testimonial-section .left {
+        order: 2;
+    }
+
+    .testimonial-section .right p {
+        display: inline;
+    }
+
+    .courses-section .course-cards {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .courses-section .course-card img {
+        height: 260px;
+        /* object-fit: cover; */
+        align-self: stretch;
+    }
+
+    .courses-section .course-card:last-child {
+        margin-bottom: 50px;
+    }
+
+    .courses-section h2 {
+        margin-bottom: 66px;
+    }
+
+    .courses-section .wrapper .btn {
+        right: 145px;
+    }
+
+    footer .links-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .links-container .contact {
+        /* background-color: red; */
+        grid-column: 1/3;
+    }
+
+    footer .links-container .text-area {
+        width: 70%;
+    }
+}
+
+/* MEDIA QUERY FOR TABLET-II */
+@media(max-width:950px) {
+    nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    .mobile-nav .menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-container {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 100%;
+        background-color: var(--black-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 200;
+        transition: all 400ms ease;
+        opacity: 0.8;
+    }
+
+    .mobile-menu-container.active {
+        left: 0;
+    }
+
+    .mobile-menu-container .close-icon {
+        position: fixed;
+        top: 70px;
+        right: 108px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 400ms ease;
+    }
+
+    .mobile-menu-container.active .close-icon {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .mobile-menu-container ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+    .mobile-menu-container ul li {
+        margin: 30px 0px;
+        text-align: center;
+    }
+
+    .mobile-menu-container ul li a {
+        text-decoration: none;
+        font: 32px;
+        color: #fff;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE */
+@media(max-width: 700px) {
+    
+    .wrapper {
+        padding: 0 32px;
+    }
+    .hero-section .left{
+        /* margin-bottom: 0; */
+        gap: 88px;
+    }
+    .hero-section .left p {
+        width: 100%;
+    }
+
+    .app-section .app-buttons {
+        flex-direction: column;
+    }
+
+    .hero-section .left h1 {
+        font-size: 36px;
+    }
+    
+    .courses-section .course-card h3 {
+        font-size: 24px;
+    }
+
+    .courses-section .wrapper {
+        padding: 0px;
+    }
+
+    .courses-section .course-cards {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .mobile-nav {
+        position: absolute;
+        padding: 32px;
+    }
+
+    .courses-section .wrapper .btn {
+        position: absolute;
+        right: 23px;
+    }
+    .mobile-menu-container{
+        /* width: 66.5%; */
+        width: 100%;
+        opacity: 0.8;
+    }
+    .mobile-menu-container .close-icon {
+        position: fixed;
+        top: 66px;
+        right: 38px;
+    }
+
+    .hero-section .right img{
+        height: 480px;
+        transform: translateX(105px);
+        
+    }
+    .hero-section .right{
+        overflow: hidden;
+        transform: translateX(30px);
+    }
+
+
+    .achievement-card h3{
+        font-size: 30px;
+    }
+    .hero-section .achievement-card{
+        margin-bottom: 64px;
+    }
+    .hero-section .achievement-cards {
+        margin: 0;
+    }
+    footer .links-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+
+    }
+    footer .links-container .contact {
+        grid-column: 1/2;
+    }
+    footer ul {
+        padding: 0px;
+    }
+    footer form input{
+        width: 130%;
+        padding: 4px 27px;
+    }
+    footer form .submit-btn {
+        top: 130%;
+        left: 50%;
+        transform: translateX(-20px);
+        height: 40px;
+        padding: 0;
+        
+        
+    }
+    footer form .submit-btn p{
+        margin-top: 2px ;
+        
+    }
+    footer .copyright{
+        margin-top: 80px;
+        text-align: center;
+    }
+
+
+}
+
+
+@media(max-width: 400px) {
+    .mobile-menu-container {
+        width: 100% !important;
+        opacity: 0.8;
+    }
+    .mobile-menu-container .close-icon {
+        position: fixed;
+        top: 66px;
+        right: 40px;
+    }
+    .mobile-menu-container{
+        width: 62.5%;
+        opacity: 0.8;
+    }
+    .testimonial-section .testimonial-card img {
+        width: 90px;
+        height: auto;
+        bottom: 40px;
+    }
+
+    .testimonial-section .testimonial-card:last-child img {
+        height: 105px;
+        bottom: 35px;
+    }
+
+    
+}
