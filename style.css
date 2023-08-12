@@ -545,6 +545,9 @@ footer .copyright {
 .mobile-menu-container {
     display: none;
 }
+.mobile-nav .logo{
+    display: none;
+}
 
 .mobile-nav .menu-icon {
     display: none;
@@ -714,6 +717,9 @@ footer .copyright {
 
     .mobile-nav {
         display: flex;
+    }
+    .mobile-nav .logo{
+        display: block;
     }
 
     .mobile-nav .menu-icon {
